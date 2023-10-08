@@ -1,5 +1,11 @@
-# I2C sample
+# I2C sample<!-- omit in toc -->
 
+- [能書き](#能書き)
+- [スレーブ側(Arduino)の動作(I2C\_slave.ino)](#スレーブ側arduinoの動作i2c_slaveino)
+- [マスター側(MSX0)の動作(I2C\_test.bas)](#マスター側msx0の動作i2c_testbas)
+- [MSX0とArduinoの接続](#msx0とarduinoの接続)
+- [留意点](#留意点)
+- [おことわり](#おことわり)
 
 ## 能書き
 

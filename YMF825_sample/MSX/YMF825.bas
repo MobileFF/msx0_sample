@@ -1,4 +1,4 @@
-1 'SAVE"YMF825-2.BAS"
+1 'SAVE"YMF825.BAS"
 1000 'Init
 1010   D$="08"
 1020   _IOTFIND("device/i2c_a",C)

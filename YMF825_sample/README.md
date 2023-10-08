@@ -49,9 +49,9 @@ MSX0は通常のI2C通信で、あまり特別なことをしていません。
 MSX0のPORT Aの[5V]と[GND]をArduino UNOの[VIN]と[GND]に繋ぎます。
 
 |ピン|MSX0(PORTA) | Arduino UNO|
-|--|--|--|
-|5V|[5V] |　[VIN]
-|GND|[GND] | [GND]（どれでもOK）
+|---|-----|------------------|
+|5V |[5V] |[VIN]             |
+|GND|[GND]|[GND]（どれでもOK）|
 
 すると、Arduino UNOの電源が入りますので、そこから[5V]をYMF825Boardに、[3.3V]をArduino Mini Proに繋ぎます。
 
@@ -64,14 +64,14 @@ MSX0のPORT Aの[5V]と[GND]をArduino UNOの[VIN]と[GND]に繋ぎます。
 次にMSX0とArduino Pro Mini、Arduino Pro MiniとYMF825Boardを接続します。
 
 |MSX0(PORTA) | Arduino Pro Mini | YMF825Board |
-|------|------|---------|
-|[SDA] | [A4] | -       |
-|[SCK] | [A5] | -       |
-| -    |[D10] | [SS]    |
-| -    |[D11] | [MOSI]  |
-| -    |[D12] | [MISO]  |
-| -    |[D13] | [SCK]   |
-| -    |[D9]  | [RST_N] |
+|------|-----|---------|
+|[SDA] |[A4] | -       |
+|[SCK] |[A5] | -       |
+| -    |[D10]| [SS]    |
+| -    |[D11]| [MOSI]  |
+| -    |[D12]| [MISO]  |
+| -    |[D13]| [SCK]   |
+| -    |[D9] | [RST_N] |
 
 ## おことわり
 

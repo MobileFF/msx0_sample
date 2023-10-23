@@ -17,6 +17,11 @@ MSX IoT BASICの`_IOTFIND()`関数を利用して、MSX0に接続されている
 |0x51|BM8563|MSX0Stack本体|
 |0x68|MPU6886|Battery Bottom II|
 
+## 実行例
+![i2c_list_sample2](https://github.com/MobileFF/msx0_sample/assets/147289117/48b70b7d-ce19-407b-a4cd-48685053aa55)
+![i2c_list_sample1](https://github.com/MobileFF/msx0_sample/assets/147289117/d5af438d-aa8c-4c3e-80c3-fdd9b7d13365)
+
+
 ## おことわり
 
 上記件に関して、なにぶんにも、中の人は電子工作、電子回路については完全な素人なのでたいしてよくわかっていないことのほうが多いです。

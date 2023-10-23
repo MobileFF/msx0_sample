@@ -14,7 +14,7 @@ MSX IoT BASICの`_IOTFIND()`関数や`_IOTPUT()`関数を利用して、MSX0の�
 
 ## 実行例
 
-
+![dskchg_sample1](https://github.com/MobileFF/msx0_sample/assets/147289117/1a5395d2-f8f0-45e8-9f9e-ae7f6311da57)
 
 ## おことわり
 

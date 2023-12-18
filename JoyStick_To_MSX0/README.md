@@ -1,5 +1,10 @@
 # ATARI9ピンのジョイスティックをMSX0に接続するためのArduinoシールド用スケッチ<!-- omit in toc -->
 
+- [能書き](#能書き)
+- [ATARI9ピンジョイスティック（MSXジョイスティック）からの入力](#atari9ピンジョイスティックmsxジョイスティックからの入力)
+- [ArduinoからMSX0への出力](#arduinoからmsx0への出力)
+- [ArduinoとMSX0の接続](#arduinoとmsx0の接続)
+- [おことわり](#おことわり)
 
 ## 能書き
 

@@ -1,0 +1,21 @@
+save "BACKUP$$.BAS"
+new
+screen0
+1000 'Initialize
+2000 'Read Filename
+2100 READ F$
+3000 'Open File
+3100 OPEN F$ AS #1 LEN=1
+3110 FIELD #1,1 AS V$
+4000 'Input Contents Length
+4100 READ L
+5000 'Read Binary and Write to File
+5100 FOR I=1 TO L
+5200   READ H$
+5250   LSET V$=CHR$(VAL("&H"+H$))
+5260   PUT #1
+5300   IF I MOD 100 = 0 THEN PRINT I
+5400 NEXT I
+5410 PRINT I
+9900 CLOSE #1
+9910 END

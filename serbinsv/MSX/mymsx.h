@@ -1,21 +1,3 @@
-//
-// BASICのBEEPと同じです。
-//
-void msx_beep();
-
-//
-// 指定座標に文字列を表示します。
-// BASICのLOCATEとPRINTを組み合わせた感じです。
-// VRAMにブロック転送しますのでBASICより高速です。
-//
-//void msx_print(uint8_t x, uint8_t y, const uint8_t* s);
-
-//
-// RAMからVRAMにブロック転送します。
-// addr_r 転送元(RAM)の開始アドレス  addr_v 転送先(VRAM)の開始アドレス  len バイト数
-//
-void msx_ram2vram(uint16_t addr_r, uint16_t addr_v, uint16_t len);
-
 void msx_soft_reset();
 void msx_jp(unsigned short int address);
 

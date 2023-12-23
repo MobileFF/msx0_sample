@@ -129,16 +129,32 @@ void main() {
         exit(1);
     }
 
-    // INITアドレスを表示する場合は以下コメントをはずす
-    // unsigned short int rom_init = wpeek(0x4002);
-    // msx_restore_slot(pri_slot_addr,sec_slot_addr);
-    // msx_print("INIT:");
-    // char* romInitStr = "0000";
-    // itoa(rom_init,romInitStr,16);
-    // msx_println(romInitStr);
-    msx_println("PRESS ANY KEY TO RESET(ESC=Exit).");
-    char c = msx_chget();
-    if(c !=0x1B) {
+    unsigned short int rom_init = wpeek(0x4002);
+
+    msx_print("INIT:");
+    char* romInitStr = "0000";
+    itoa(rom_init,romInitStr,16);
+    msx_println(romInitStr);
+
+    if (rom_init>0) {
+        msx_print("PRESS ANY KEY TO JUMP ROM INIT[");
+        char* romInitStr = "0000";
+        itoa(rom_init,romInitStr,16);
+        msx_print(romInitStr);
+        msx_println("](ESC=Exit).");
+        char c = msx_chget();
+        if(c==0x1B) {
+            msx_restore_slot(pri_slot_addr,sec_slot_addr);
+            exit(0);
+        }
+        msx_calslt(slot<<8,rom_init);
+    } else {
+        msx_println("PRESS ANY KEY TO RESET(ESC=Exit).");
+        char c = msx_chget();
+        if(c==0x1B) {
+            msx_restore_slot(pri_slot_addr,sec_slot_addr);
+            exit(0);
+        }
         msx_soft_reset();
     }
 }

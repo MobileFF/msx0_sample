@@ -29,6 +29,13 @@ MSX0側は、ほとんど何も準備することがありません。MSX0をWiF
 
 WeMos D1には、`ESP8266`フォルダに入っている２つのソースをArduino IDEで開いて、転送しておきます。
 
+`secrets.h`の以下の箇所にはご自身がお使いのWiFiのSSIDとパスワードを記述してください。
+
+```c
+#define STASSID "XXXXXXXXX"
+#define STAPSK "PASSWORD"
+```
+
 UART端末（PB-1000）には、`PB-1000`フォルダに入っている`MSX0RC.BAS`を入れておきます。
 
 ## UARTシールドの構造

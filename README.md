@@ -53,3 +53,7 @@ BASICモードで、ディスクに格納された32KBのROMイメージをRAM�
 ## I2C_to_UART
 
 MSX0からI2C通信で送信した内容をUARTに変換し外部デバイスに送信させるためのプログラム群です。
+
+## UART_to_RemoteConsole
+
+外部からUARTで受信した文字列をWiFi経由でリモートコンソールに送り、リモートコンソールからの応答をUARTに返信するためのプログラム（WeMos D1用のArduinoスケッチ）です。

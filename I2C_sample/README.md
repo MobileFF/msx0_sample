@@ -167,7 +167,7 @@ Arduino側はI2C通信用に専用のピン(SDA,SCL)が用意されています�
 
 ※PORT Aの5V(右から２番目のピン)は今回使わない(MSX0からスレーブデバイスに電源供給しない)ので接続しなくてOKです。
 
-MSX0標準のGrove Beginner Kit for MSX0に付属のSeeeduino Lotus(Arduino UNO互換機)を使う場合は、"I2C."と書かれたGroveコネクタにつなぐだけでOKです。また、電源がMSX0側から共有されるので、Seeeduino Lotusにプログラムを転送したあとは、USBケーブルを外しても動作します。
+MSX0標準のGrove Beginner Kit for MSX0に付属のSeeeduino Lotus(Arduino UNO互換機)を使う場合は、"I2C."または"I2C.."と書かれたGroveコネクタにつなぐだけでOKです。また、電源がMSX0側から共有されるので、Seeeduino Lotusにプログラムを転送したあとは、USBケーブルを外しても動作します。
 
 ![Seeeduino Lotus](./image/IMG_20240409_231814.jpg "Seeeduino Lotus")
 

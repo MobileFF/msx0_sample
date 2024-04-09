@@ -8,6 +8,8 @@
 
 ## 能書き
 
+![JoyStick to MSX0](./image/joystick_to_msx0.jpg "JoyStick to MSX0")
+
 MSX0にATARI9ピンのジョイスティック（いわゆるMSX用のジョイスティック）を接続するためのArduinoシールドを作ったのですが、その際に利用するスケッチです。
 
 MSX側のサンプルコードは、MSX BASICでシンプルに`STICK()`関数や`STRIG()`関数を使ってジョイスティックの入力を確認するためのもので単なるサンプルコードなので実験に必須ではありません。
@@ -68,6 +70,8 @@ ArduinoとI2Cケーブル(Groveケーブル)との接続は以下のとおりで
 |5V  |5V      |
 |GND |GND     |
 
+(2024.4.9追記)
+MSX0標準のGrove Beginner Kit for MSX0に付属のSeeeduino Lotus(Arduino UNO互換機)を使う場合は、"I2C."または"I2C.."と書かれたGroveコネクタにつなぎますが、被せるシールドの高さによってはやや配線が厳しいかもしれませんので、シールド側にGroveコネクタをつけたほうが無難かもしれません。本記事のシールドはSeeeduino Lotus入手前の状況で作成したため、シールド上にGroveコネクタをつけて、それぞれのピンに配線していました。
 
 ## おことわり
 

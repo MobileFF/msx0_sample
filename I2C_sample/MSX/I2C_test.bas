@@ -23,7 +23,12 @@
 2050     _IOTPUT(N$,C$)
 2060     PRINT "SEND:[";ASC(C$);"] ";
 2070     _IOTGET(N$,S$)
-2080     PRINT "RECV:[";ASC(S$);"]"
-2090   NEXT I
-2100   END
+2080     PRINT "RECV:";
+2090     FOR J=1 TO 16
+2100       S1$=MID$(S$,J,1)
+2110       PRINT "[";HEX$(ASC(S1$));"]";
+2120     NEXT J
+2130     PRINT
+2140   NEXT I
+9999   END
 SAVE"I2C_TEST.BAS"

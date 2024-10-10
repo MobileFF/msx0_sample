@@ -59,3 +59,14 @@ MSX0からI2C通信で送信した内容をUARTに変換し外部デバイスに
 外部からUARTで受信した文字列をWiFi経由でリモートコンソールに送り、リモートコンソールからの応答をUARTに返信するためのプログラム（WeMos D1用のArduinoスケッチ）です。
 
 クライアント側端末はポケコン(PB-1000)のBASICプログラムを掲載しています。
+
+## VGMplay_I2C
+
+MSX0からVGMデータファイルの内容をI2CでRaspberry Pi Picoに送信し、Raspberry Pi PicoがYM2151にVGMデータを送って演奏させるプログラムです。
+
+## LTHPA
+
+MSX IoT BASICのUART通信、I2C通信機能を利用して、GPS/温湿度センサー/気圧センサーから得た値をCSV形式でファイルに記録していくBASICプログラムです。
+
+プログラムのファイル名(LTHPA.bas)は、Location(位置情報)/Temperature(温度)/Humidity(湿度)/Pressure(気圧)/Altitude(高度)の略称です。なんのひねりもなくてすいません。
+

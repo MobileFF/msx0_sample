@@ -13,7 +13,7 @@ MSX IoT BASICのUART通信、I2C通信機能を利用して、GPS/温湿度セ�
 - GPSデバイス
   - M5Stack用GPSユニット U032
 - 温湿度センサー
-  - Grove Temperature & Humiditiy Sensor(DHT11)
+  - Grove Temperature & Humiditiy Sensor(DHT20)
     - MSX0センサーキット(Grove Beginner Kit for Arduino)に含まれているセンサーです。
 - 気圧センサー
   - Grove Air Pressure Sensor(BMP280)
@@ -101,6 +101,15 @@ GPSが測位を開始するまでには、１分程度かかる場合もあり�
 2024.10.10
 
 - 初版
+
+2024.10.11
+
+- 温湿度センサーの機種名が誤っていた（DHT11→DHT20）ので修正
+- ちなみにSeeedのWikiは古い情報のままで、中の人もこれを見て書いてしまい間違えました。
+  - [https://wiki.seeedstudio.com/Grove-Beginner-Kit-For-Arduino/](https://wiki.seeedstudio.com/Grove-Beginner-Kit-For-Arduino/)
+- Seeed K.K.さん(日本法人？)のブログでセンサーの機種が更新されていることが報告されています。
+  - https://lab.seeed.co.jp/entry/2022/12/26/120000
+  - 本家も対応してほしいw
 
 ## おことわり
 
